@@ -13,7 +13,7 @@ using System.Collections.Generic;
 
 public class SendAllFilesEmail : MonoBehaviour {
 
-	private static string status;
+	private static string status ="";
 	public GameObject theDebugLabel;
 	private static Boolean outputDebug = false;
 
@@ -33,25 +33,31 @@ public class SendAllFilesEmail : MonoBehaviour {
 		if(outputDebug)
 		{
 			theDebugLabel.GetComponent<UILabel>().text = status;
-			if(status.Substring(0,11) == "Email Error" )
+			if(status.Length != 0)
 			{
-				outputDebug = false;
+				if(status.Substring(0,11) == "Email Error" )
+				{
+					outputDebug = false;
+				}
+				if(status == "Message Sent")
+				{
+					outputDebug = false;
+				}
+				if(status == "No Internet Connection")
+				{
+					outputDebug = false;
+				}
 			}
-			if(status == "Message Sent")
-			{
-				outputDebug = false;
-			}
-			if(status == "No Internet Connection")
-			{
-				outputDebug = false;
-			}
+
+
 		}
 	}
 
 	void OnClick()
 	{
 		outputDebug = true;
-		send_email_with_attachment();
+		//UnComment to send Email!
+		//send_email_with_attachment();
 	}
 	
 	bool InternetConnection()

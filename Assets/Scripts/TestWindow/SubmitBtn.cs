@@ -301,15 +301,16 @@ public class SubmitBtn : MonoBehaviour {
 					//End String
 					
 					//Debug.Log (Summary_Line);
-					
-					StreamWriter fileWriter = null;
+
+					//UnCommentThis for later
+					/*StreamWriter fileWriter = null;
 					fileWriter = File.AppendText(GameEngine.GetComponent<TestManager>().currentSummaryFilePath);
 					fileWriter.WriteLine(Summary_Line);
 					fileWriter.Close();
 
 					fileWriter = File.AppendText(GameEngine.GetComponent<TestManager>().currentLogFilePath);
 					fileWriter.WriteLine(LogFileColumn);
-					fileWriter.Close();
+					fileWriter.Close();*/
 
 
 
@@ -460,14 +461,15 @@ public class SubmitBtn : MonoBehaviour {
 
 					//Debug.Log (Summary_Line);
 
-					StreamWriter fileWriter = null;
+					//UnComment this Later
+					/*StreamWriter fileWriter = null;
 					fileWriter = File.AppendText(GameEngine.GetComponent<TestManager>().currentSummaryFilePath);
 					fileWriter.WriteLine(Summary_Line);
 					fileWriter.Close();
 
 					fileWriter = File.AppendText(GameEngine.GetComponent<TestManager>().currentLogFilePath);
 					fileWriter.WriteLine(LogFileColumn);
-					fileWriter.Close();
+					fileWriter.Close();*/
 
 					GameEngine.GetComponent<TestManager>().Correct_Count = 0;
 

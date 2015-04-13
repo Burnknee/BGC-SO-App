@@ -167,6 +167,10 @@
      <Compile Include="Assets\QuitApp.cs" />
      <Compile Include="Assets\Scripts\AbortPopUp\AbortPopUp_CancelBtn.cs" />
      <Compile Include="Assets\Scripts\AdminSettings\Buttons\AdaptiveOpBtn.cs" />
+     <Compile Include="Assets\Scripts\AdminSettings\Buttons\CalibrationDBDownArrow.cs" />
+     <Compile Include="Assets\Scripts\AdminSettings\Buttons\CalibrationDBUpArrow.cs" />
+     <Compile Include="Assets\Scripts\AdminSettings\Buttons\CalibrationOpBtn.cs" />
+     <Compile Include="Assets\Scripts\AdminSettings\Buttons\CalibrationPlayToneBtn.cs" />
      <Compile Include="Assets\Scripts\AdminSettings\Buttons\EmailOpBtn.cs" />
      <Compile Include="Assets\Scripts\AdminSettings\Buttons\GeneralOpBtn.cs" />
      <Compile Include="Assets\Scripts\AdminSettings\Buttons\ProgressiveOpBtn.cs" />
@@ -177,6 +181,8 @@
      <Compile Include="Assets\Scripts\AdminSettings\Inputs\Adaptive_Reversal2_Input.cs" />
      <Compile Include="Assets\Scripts\AdminSettings\Inputs\Adaptive_StepSize1_Input.cs" />
      <Compile Include="Assets\Scripts\AdminSettings\Inputs\Adaptive_StepSize2_Input.cs" />
+     <Compile Include="Assets\Scripts\AdminSettings\Inputs\Calibration_Conversion_Input.cs" />
+     <Compile Include="Assets\Scripts\AdminSettings\Inputs\Calibration_DB_Input.cs" />
      <Compile Include="Assets\Scripts\AdminSettings\Inputs\DB_Offset_Gen_Input.cs" />
      <Compile Include="Assets\Scripts\AdminSettings\Inputs\NumOfSteps_Input.cs" />
      <Compile Include="Assets\Scripts\AdminSettings\Inputs\NumOfTracks_Input.cs" />

@@ -31,7 +31,10 @@ public class InitStartBtn : MonoBehaviour {
 		GameEngine.GetComponent<TestManager>().SessionID = tempID;
 
 		//Create the folder for this sessionID if it does not exist!
-		DirectoryInfo dirConvFiles = new DirectoryInfo(Application.persistentDataPath + "/Session_" +tempID);
+
+
+		//UnComment this to create files.
+		/*DirectoryInfo dirConvFiles = new DirectoryInfo(Application.persistentDataPath + "/Session_" +tempID);
 		if(!dirConvFiles.Exists)
 		{ 
 			dirConvFiles.Create(); 
@@ -55,7 +58,7 @@ public class InitStartBtn : MonoBehaviour {
 
 		fileWriter = File.CreateText(sessionSummaryFile);
 		//fileWriter.WriteLine("Hello, this is a Summary File!");
-		fileWriter.Close();
+		fileWriter.Close();*/
 
 		GameEngine.GetComponent<TestManager>().testNum = 1;
 

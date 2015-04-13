@@ -7,6 +7,7 @@ public class AdminSettingsManager : MonoBehaviour {
 	public GameObject Email_BG;
 	public GameObject Progressive_BG;
 	public GameObject Adaptive_BG;
+	public GameObject Calibration_BG;
 
 	public GameObject Title_Label;
 
@@ -14,7 +15,7 @@ public class AdminSettingsManager : MonoBehaviour {
 	public GameObject Email_Window;
 	public GameObject Progressive_Window;
 	public GameObject Adaptive_Window;
-
+	public GameObject Calibration_Window;
 
 
 	// Use this for initialization
@@ -24,6 +25,7 @@ public class AdminSettingsManager : MonoBehaviour {
 		Email_BG.GetComponent<UISprite>().depth = 0;
 		Progressive_BG.GetComponent<UISprite>().depth = 0;
 		Adaptive_BG.GetComponent<UISprite>().depth = 0;
+		Calibration_BG.GetComponent<UISprite>().depth = 0;
 
 		Title_Label.GetComponent<UILabel>().text = "General Options";
 		/*General_Window.SetActive(true);
@@ -54,12 +56,14 @@ public class AdminSettingsManager : MonoBehaviour {
 			Email_BG.GetComponent<UISprite>().depth = -1;
 			Progressive_BG.GetComponent<UISprite>().depth = -1;
 			Adaptive_BG.GetComponent<UISprite>().depth = -1;
+			Calibration_BG.GetComponent<UISprite>().depth = -1;
 
 			Title_Label.GetComponent<UILabel>().text = "General Options";
 			General_Window.SetActive(true);
 			Email_Window.SetActive(false);
 			Progressive_Window.SetActive(false);
 			Adaptive_Window.SetActive(false);
+			Calibration_Window.SetActive(false);
 		}
 		else if(grp_num == 1)
 		{
@@ -67,12 +71,16 @@ public class AdminSettingsManager : MonoBehaviour {
 			Email_BG.GetComponent<UISprite>().depth = 1;
 			Progressive_BG.GetComponent<UISprite>().depth = -1;
 			Adaptive_BG.GetComponent<UISprite>().depth = -1;
+			Calibration_BG.GetComponent<UISprite>().depth = -1;
+
 
 			Title_Label.GetComponent<UILabel>().text = "Email Options";
 			General_Window.SetActive(false);
 			Email_Window.SetActive(true);
 			Progressive_Window.SetActive(false);
 			Adaptive_Window.SetActive(false);
+			Calibration_Window.SetActive(false);
+
 
 		}
 		else if(grp_num == 2)
@@ -81,12 +89,16 @@ public class AdminSettingsManager : MonoBehaviour {
 			Email_BG.GetComponent<UISprite>().depth = -1;
 			Progressive_BG.GetComponent<UISprite>().depth = 1;
 			Adaptive_BG.GetComponent<UISprite>().depth = -1;
+			Calibration_BG.GetComponent<UISprite>().depth = -1;
+
 
 			Title_Label.GetComponent<UILabel>().text = "Progressive Options";
 			General_Window.SetActive(false);
 			Email_Window.SetActive(false);
 			Progressive_Window.SetActive(true);
 			Adaptive_Window.SetActive(false);
+			Calibration_Window.SetActive(false);
+
 		}
 		else if (grp_num == 3)
 		{
@@ -94,12 +106,33 @@ public class AdminSettingsManager : MonoBehaviour {
 			Email_BG.GetComponent<UISprite>().depth = -1;
 			Progressive_BG.GetComponent<UISprite>().depth = -1;
 			Adaptive_BG.GetComponent<UISprite>().depth = 1;
+			Calibration_BG.GetComponent<UISprite>().depth = -1;
+
 
 			Title_Label.GetComponent<UILabel>().text = "Adaptive Options";
 			General_Window.SetActive(false);
 			Email_Window.SetActive(false);
 			Progressive_Window.SetActive(false);
 			Adaptive_Window.SetActive(true);
+			Calibration_Window.SetActive(false);
+
+		}
+		else if (grp_num == 4)
+		{
+			General_BG.GetComponent<UISprite>().depth = -1;
+			Email_BG.GetComponent<UISprite>().depth = -1;
+			Progressive_BG.GetComponent<UISprite>().depth = -1;
+			Adaptive_BG.GetComponent<UISprite>().depth = -1;
+			Calibration_BG.GetComponent<UISprite>().depth = 1;
+
+			
+			Title_Label.GetComponent<UILabel>().text = "Calibration";
+			General_Window.SetActive(false);
+			Email_Window.SetActive(false);
+			Progressive_Window.SetActive(false);
+			Adaptive_Window.SetActive(false);
+			Calibration_Window.SetActive(true);
+
 		}
 
 
